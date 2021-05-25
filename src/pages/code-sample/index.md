@@ -6,13 +6,13 @@ description: Code Examples.
 
 ## Photoshop
 
-The code snippets are using one of our [sample psd](https://github.com/AdobeDocs/cis-photoshop-api-docs/blob/main/sample_files/Example.psd) files. Please feel free to download and use it for testing. Just remember you will need to have this file stored in one of the accepted external storage. For more information on storage please refer to the [File Storage](../general-workflow/#input-and-output-file-storage).
+The code snippets are using one of our [sample psd](https://github.com/AdobeDocs/cis-photoshop-api-docs/blob/main/sample_files/Example.psd) files. Please feel free to download and use it for testing, but remember you will need to have this file stored in one of the accepted external storage. For more information on storage please refer to the [File Storage](../general-workflow/#input-and-output-file-storage).
 
 ### Example 1: Replacing a SmartObject
 The `/smartObject` endpoint can take an input PSD file with an embedded smartobject and can replace with another smartobject.
-This API is a simple API developed to ease the smartObject replacement workflow for an user.
+This is a simple API developed to ease the smartObject replacement workflow for an user.
 
-This example shows how you can replace an embedded smart object
+This example shows how you can replace an embedded smart object.
 
 ``` shell
 curl - H "Authorization: Bearer $token" \
@@ -80,7 +80,7 @@ https: //image.adobe.io/pie/psdService/smartObject
 ]}'
 ```
 
-A call to this API initiates an asynchronous job and returns a response containing an href. Use the value in the href to poll for the status of the job. This is illustrated in [Example 12](/code-sample/#example-12-fetch-the-status-of-an-api) and [Example 14](/code-sample/#example-14-poll-for-job-status-for-all-other-apis)
+A call to this API initiates an asynchronous job and returns a response containing an href. Use the value in the href to poll for the status of the job. This is illustrated in [Example 12](/code-sample/#example-12-fetch-the-status-of-an-api) and [Example 14](/code-sample/#example-14-poll-for-job-status-for-all-other-apis).
 
 ### Example 3: Making a text layer edit
 
@@ -188,7 +188,7 @@ curl -X POST \
 ```
 
 ### Example 5: Dictating actions for missing fonts
-In this request for example, if `MySampleFont` is not found while processing the request, the system default font (`ArialMT`) will be used as `manageMissingFonts` is set to `useDefault`
+In this request for example, if `MySampleFont` is not found while processing the request, the system default font (`ArialMT`) will be used as `manageMissingFonts` is set to `useDefault`.
 ```shell
 curl -X POST \
   https://image.adobe.io/pie/psdService/documentOperations \
@@ -241,7 +241,7 @@ curl -X POST \
 }'
 ```
 
-A call to this API initiates an asynchronous job and returns a response containing an href. Use the value in the href to poll for the status of the job. This is illustrated in [Example 12](/code-sample/#example-12-fetch-the-status-of-an-api) and [Example 14](/code-sample/#example-14-poll-for-job-status-for-all-other-apis)
+A call to this API initiates an asynchronous job and returns a response containing an href. Use the value in the href to poll for the status of the job. This is illustrated in [Example 12](/code-sample/#example-12-fetch-the-status-of-an-api) and [Example 14](/code-sample/#example-14-poll-for-job-status-for-all-other-apis).
 
 ### Example 6: Making a simple edit
 ```shell
@@ -282,7 +282,7 @@ curl -X POST \
 
 ### Example 7: Swapping the image in a smart object layer
 
-In this example we are replacing the smartobject using `documentOperations` API
+In this example we are replacing the smartobject using `documentOperations` API.
 
 ```shell
 curl -X POST \
@@ -335,7 +335,7 @@ curl -X POST \
 }'
 ```
 
-A call to this API initiates an asynchronous job and returns a response containing an href. Use the value in the href to poll for the status of the job. This is illustrated in [Example 12](/code-sample/#example-12-fetch-the-status-of-an-api) and [Example 14](/code-sample/#example-14-poll-for-job-status-for-all-other-apis)
+A call to this API initiates an asynchronous job and returns a response containing an href. Use the value in the href to poll for the status of the job. This is illustrated in [Example 12](/code-sample/#example-12-fetch-the-status-of-an-api) and [Example 14](/code-sample/#example-14-poll-for-job-status-for-all-other-apis).
 
 ### Example 8: Adding a new adjustment layer
 
@@ -383,7 +383,7 @@ curl -X POST \
 }'
 ```
 
-A call to this API initiates an asynchronous job and returns a response containing an href. Use the value in the href to poll for the status of the job. This is illustrated in [Example 12](/code-sample/#example-12-fetch-the-status-of-an-api) and [Example 14](/code-sample/#example-14-poll-for-job-status-for-all-other-apis)
+A call to this API initiates an asynchronous job and returns a response containing an href. Use the value in the href to poll for the status of the job. This is illustrated in [Example 12](/code-sample/#example-12-fetch-the-status-of-an-api) and [Example 14](/code-sample/#example-14-poll-for-job-status-for-all-other-apis).
 
 ### Example 9: Editing a pixel layer
 
@@ -437,10 +437,10 @@ curl -X POST \
 '
 ```
 
-A call to this API initiates an asynchronous job and returns a response containing an href. Use the value in the href to poll for the status of the job. This is illustrated in [Example 12](/code-sample/#example-12-fetch-the-status-of-an-api) and [Example 14](/code-sample/#example-14-poll-for-job-status-for-all-other-apis)
+A call to this API initiates an asynchronous job and returns a response containing an href. Use the value in the href to poll for the status of the job. This is illustrated in [Example 12](/code-sample/#example-12-fetch-the-status-of-an-api) and [Example 14](/code-sample/#example-14-poll-for-job-status-for-all-other-apis).
 
 ### Example 10: Create a document rendition
-Generate multiple output rendition with the Simple API `renditionCreate`
+Generate multiple output rendition with the Simple API `renditionCreate`.
 
 ```shell
 curl -X POST \
@@ -471,7 +471,7 @@ curl -X POST \
 }'
 ```
 
-A call to this API initiates an asynchronous job and returns a response containing an href. Use the value in the href to poll for the status of the job. This is illustrated in [Example 12](/code-sample/#example-12-fetch-the-status-of-an-api) and [Example 14](/code-sample/#example-14-poll-for-job-status-for-all-other-apis)
+A call to this API initiates an asynchronous job and returns a response containing an href. Use the value in the href to poll for the status of the job. This is illustrated in [Example 12](/code-sample/#example-12-fetch-the-status-of-an-api) and [Example 14](/code-sample/#example-14-poll-for-job-status-for-all-other-apis).
 
 ### Example 11: Retrieve a PSD's JSON manifest
 
@@ -494,7 +494,7 @@ curl -X POST \
   ]
 }'
 ```
-A call to this API initiates an asynchronous job and returns a response containing an href. Use the value in the href to poll for the status of the job and the same response will also contain the JSON manifest. This is illustrated in [Example 12](/code-sample/#example-12-fetch-the-status-of-an-api) and [Example 14](/code-sample/#example-14-poll-for-job-status-for-all-other-apis)
+A call to this API initiates an asynchronous job and returns a response containing an href. Use the value in the href to poll for the status of the job and the same response will also contain the JSON manifest. This is illustrated in [Example 12](/code-sample/#example-12-fetch-the-status-of-an-api) and [Example 14](/code-sample/#example-14-poll-for-job-status-for-all-other-apis).
 
 ###  Example 12: Fetch the status of an API
 Each of our Photoshop APIs, when invoked, initiates an asynchronous job and returns a response body that contains the href to poll for status of the job.
@@ -519,7 +519,7 @@ curl -X GET \
 ```
 ### Example 13: Poll for job status for documentManifest
 
-Once your job completes successfully (no errors/failures reported), the status response will contain your document's JSON manifest along with other metadata about the input document. The JSON Manifest is further described in the [api docs](https://adobedocs.github.io/photoshop-api-docs-pre-release/#api-Photoshop-document-manifest-status)
+Once your job completes successfully (no errors/failures reported), the status response will contain your document's JSON manifest along with other metadata about the input document. The JSON Manifest is further described in the [api docs](https://adobedocs.github.io/photoshop-api-docs-pre-release/#api-Photoshop-document-manifest-status).
 
 ```json
 {
@@ -1021,7 +1021,7 @@ curl -X GET \
   -H 'x-api-key: <YOUR_API_KEY>'
 ```
 
-And this will return a request body containing the job status for each requested output and eventually either errors or the hrefs to the requested outputs
+And this will return a request body containing the job status for each requested output and eventually either errors or the hrefs to the requested outputs.
 
 ```json
 {
@@ -1090,7 +1090,7 @@ This initiates an asynchronous job and returns a response containing the href to
 ```
 
 
-Using the job id returned from the previous call you can poll on the returned `/status` href to get the job status
+Using the job id returned from the previous call you can poll on the returned `/status` href to get the job status.
 
 ```shell
 curl -X GET \
@@ -1100,7 +1100,7 @@ curl -X GET \
   -H 'x-api-key: <YOUR_API_KEY>'
 ```
 
-Once the job is complete your successful `/status` response will look similar to the response below; The output will have been placed in your requested location. In the event of failure the errors will be shown instead
+Once the job is complete your successful `/status` response will look similar to the response below; The output will have been placed in your requested location. In the event of failure the errors will be shown instead.
 
 ```json
 {
@@ -1134,7 +1134,7 @@ This workflow is ONLY for users who'd like to generate cutout result as Photosho
 
 #### Sample Input/Output
 Sample input from [here](https://github.com/AdobeDocs/cis-photoshop-api-docs/blob/main/sample_files/ic_customized_workflow/input.jpg).
-Sample output from [here](https://github.com/AdobeDocs/cis-photoshop-api-docs/blob/main/sample_files/ic_customized_workflow/result_with_path.jpg) (Note: you will need to open result in Photoshop Desktop application so that you will see the path in path panel)
+Sample output from [here](https://github.com/AdobeDocs/cis-photoshop-api-docs/blob/main/sample_files/ic_customized_workflow/result_with_path.jpg) (Note: you will need to open result in Photoshop Desktop application so that you will see the path in path panel).
 
 #### Instructions
 
